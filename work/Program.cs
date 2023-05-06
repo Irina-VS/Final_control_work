@@ -1,11 +1,13 @@
-﻿string[] arry1={“Hello”, “2”, “world”, “Kazan”};
+﻿string[] arry1={"Hello","2","world","Kazan"};
 int n=3;
-string[] arry2;
 int M= arry1.Length;
+string[] arry2 = new string[M] ;
+int i=0;
 //m - индекс arry1, i - индекс arry2
 for( int m=0; m<=M; m++)
 {
-    if (arry1[m].Length<=n)
+    string L=arry1[m];
+    if (L.Length<=n)
     {
         arry2[i]=arry1[m];
         i++;
