@@ -1,19 +1,16 @@
-﻿string[] arry1={"Hello","2","world","Kazan"};
+﻿string[] array1={"Hello","2","world","Kazan"};
 int n=3;
-int M= arry1.Length;
-string[] arry2 = new string[M] ;
+string[] array2 = new string[array1.Length] ;
 int i=0;
-//m - индекс arry1, i - индекс arry2
-for( int m=0; m<=M; m++)
+for( int j=0; j<=array1.Length; j++)
 {
-    string L=arry1[m];
-    if (L.Length<=n)
+    if (array1[j].Length <= n)
     {
-        arry2[i]=arry1[m];
+        array2[i]=array1[j];
         i++;
     }
 }
 if (i>0)
-Console.WriteLine(arry1);
+Console.WriteLine(array2);
 else
 Console.WriteLine("Элементов удовлетворяющих условию не найдено");
